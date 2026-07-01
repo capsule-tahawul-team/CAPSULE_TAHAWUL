@@ -1,9 +1,11 @@
+import MainLayout from "./layouts/MainLayout";
+import Home from "./pages/Home";
+
 function App() {
   return (
-    <div>
-      <h1>CAPSULE TAHAWUL</h1>
-      <p>Welcome to our React project</p>
-    </div>
+    <MainLayout>
+      <Home />
+    </MainLayout>
   );
 }
 
