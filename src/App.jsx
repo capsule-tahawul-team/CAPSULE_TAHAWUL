@@ -1,11 +1,14 @@
 import MainLayout from "./layouts/MainLayout";
-import Home from "./pages/Home";
+import Dashboard from "./page/Dashboard";
+import { RoleProvider } from "./context/RoleContext";
 
 function App() {
   return (
-    <MainLayout>
-      <Home />
-    </MainLayout>
+    <RoleProvider>
+      <MainLayout>
+        <Dashboard />
+      </MainLayout>
+    </RoleProvider>
   );
 }
 

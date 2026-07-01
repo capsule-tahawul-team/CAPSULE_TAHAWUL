@@ -1,16 +1,16 @@
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Footer from "../components/Footer";
+import Topbar from "../components/Topbar";
 
-export default function MainLayout({ children }) {
+function MainLayout({ children }) {
   return (
-    <div className="flex min-h-screen flex-col">
-      <Header />
+    <div dir="rtl" className="min-h-screen bg-brand-light font-body text-brand-text">
+      <Topbar />
 
-      <main className="flex-1">
-        {children}
-      </main>
+      <main className="p-5">{children}</main>
 
       <Footer />
     </div>
   );
 }
+
+export default MainLayout;
